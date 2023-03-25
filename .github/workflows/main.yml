@@ -15,9 +15,9 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm build
+      - run: npm run build
       - name: Deploy to Cloudflare Workers with Wrangler
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: "pages publish -e prod" 
+          command: "pages publish dist -e prod" 
