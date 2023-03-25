@@ -1,7 +1,7 @@
 name = "extremo-portal"
 compatibility_date = "2023-01-15"
 
-account_id = "dee473b777ccdb8a889e30905f52b363"
+account_id = "15cde94dbef55da086b42d41b182e28e"
 
 [build]
 command = "npm install && npm run build"
