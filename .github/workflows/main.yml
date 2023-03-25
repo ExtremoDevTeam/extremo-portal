@@ -20,4 +20,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: 15cde94dbef55da086b42d41b182e28e
           command: "pages publish dist -e prod" 
