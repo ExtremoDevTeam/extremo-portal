@@ -21,4 +21,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: 15cde94dbef55da086b42d41b182e28e
-          command: "pages publish --project-name='extremo-portal'  dist -e prod"
+          command: "pages publish --project-name='extremo-portal'  dist --branch prod"
