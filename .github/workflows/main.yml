@@ -13,11 +13,11 @@ jobs:
           fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20.x
       - run: npm ci
       - run: npm run build
       - name: Deploy to Cloudflare Workers with Wrangler
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: 15cde94dbef55da086b42d41b182e28e
